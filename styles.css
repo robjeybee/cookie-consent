@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,6 +11,8 @@ body {
   font-family: "DM Sans", sans-serif;
   color: #222;
 }
+
+/* typography */
 
 h1 {
   font-size: 48px;
@@ -62,6 +64,8 @@ li {
   background-color: #fcf1fe;
 }
 
+/* layout */
+
 img {
   width: 100%;
 }
@@ -72,14 +76,14 @@ main {
 }
 
 .modal {
+  display: none;
   position: fixed;
+  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
-  display: none;
-  height: 450px;
+  height: 470px;
   width: 350px;
   border-radius: 5px;
   box-shadow: 0px 0px 6px 2px #666;
@@ -115,12 +119,21 @@ main {
   cursor: pointer;
 }
 
+.modal-close-btn:disabled {
+  color: whitesmoke;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
 
 .modal-choice-btns {
   margin-top: 10px;
   padding: 8px 16px;
   display: flex;
   justify-content: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .modal-btn {
@@ -146,8 +159,17 @@ input {
 }
 
 .modal-text {
-  height: 140px;
+  height: 180px;
   line-height: 23px;
+  margin-bottom: 0;
+}
 
+.idiot-gif {
+  width: 95%;
+  margin: 0 auto;
+}
 
+.idiot-gif img {
+  box-shadow: 1px 1px 3px #999;
+  border-radius: 5px;
 }
